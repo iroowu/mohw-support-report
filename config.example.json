@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "calendar_name": "上診",
+  "skip_keywords": ["請假", "取消", "停診"],
+  "round_minutes": 30,
+  "archive_dir": "~/Documents/報備支援紀錄",
+  "clinics": [
+    {
+      "alias": "晨光",
+      "keywords": ["晨光"],
+      "code": "9900000001",
+      "official_name": "晨光皮膚科診所",
+      "county": "臺中市",
+      "town": "西屯區",
+      "breaks": [],
+      "variants": [],
+      "note": "照行事曆時間申報"
+    },
+    {
+      "alias": "海風",
+      "keywords": ["海風"],
+      "code": "9900000002",
+      "official_name": "海風美學診所",
+      "county": "高雄市",
+      "town": "左營區",
+      "breaks": [["1230", "1400"], ["1700", "1730"]],
+      "variants": [],
+      "note": "診間有午休與晚餐休息，扣掉休息時段分段申報"
+    },
+    {
+      "alias": "山城",
+      "keywords": ["山城"],
+      "code": "9900000003",
+      "official_name": "山城家庭醫學科診所",
+      "county": "南投縣",
+      "town": "埔里鎮",
+      "breaks": [],
+      "variants": [
+        {"keyword": "早班", "start": "0900", "end": "1200"}
+      ],
+      "note": "行事曆標題寫「山城早班」時，不管事件時間，一律報 0900~1200"
+    }
+  ]
+}
